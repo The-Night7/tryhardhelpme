@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Ultra Stylé</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-top: 100px;
+        }
+        .hero {
+            margin-bottom: 50px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .cta {
+            margin-top: 20px;
+        }
+        .cta a {
+            text-decoration: none;
+            background: #ff4d6d;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta a:hover {
+            background: #ff1f4a;
+        }
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ultra Stylé</h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Bienvenue sur le site le plus stylé !</h2>
+        <p>Découvrez un design moderne et une expérience unique.</p>
+        <div class="cta">
+            <a href="#about">En savoir plus</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Ce site a été conçu pour impressionner et inspirer. Profitez d'un design élégant et d'une navigation fluide.</p>
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <p>Nous proposons des solutions innovantes adaptées à vos besoins.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Envoyez-nous un message pour en savoir plus.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Ultra Stylé. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
