@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Ultra Stylé</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: #fff;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
         }
         header {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 30px;
             width: 100%;
             position: fixed;
             top: 0;
@@ -28,54 +28,85 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
         }
         header h1 {
             margin: 0;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            color: #fff;
+        }
+        header nav {
+            display: flex;
+            gap: 20px;
         }
         header nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
         header nav a:hover {
-            text-decoration: underline;
+            color: #00e6e6;
         }
-        section {
-            margin-top: 100px;
+        main {
+            margin-top: 80px;
+            width: 90%;
+            max-width: 1200px;
         }
         .hero {
-            margin-bottom: 50px;
+            padding: 50px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
         }
         .hero h2 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
         }
-        .cta {
-            margin-top: 20px;
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
         }
         .cta a {
             text-decoration: none;
-            background: #ff4d6d;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
+            background: #00e6e6;
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 8px;
             font-weight: bold;
-            transition: background 0.3s;
+            font-size: 1rem;
+            transition: background 0.3s ease, transform 0.2s ease;
         }
         .cta a:hover {
-            background: #ff1f4a;
+            background: #00b3b3;
+            transform: scale(1.05);
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        section p {
+            font-size: 1rem;
+            line-height: 1.6;
         }
         footer {
-            margin-top: auto;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.8);
             width: 100%;
             text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
         }
         footer p {
             margin: 0;
             font-size: 0.9rem;
+            color: #ccc;
         }
     </style>
 </head>
@@ -88,27 +119,29 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="hero">
-        <h2>Bienvenue sur le site le plus stylé !</h2>
-        <p>Découvrez un design moderne et une expérience unique.</p>
-        <div class="cta">
-            <a href="#about">En savoir plus</a>
-        </div>
-    </section>
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Ce site a été conçu pour impressionner et inspirer. Profitez d'un design élégant et d'une navigation fluide.</p>
-    </section>
-    <section id="services">
-        <h2>Services</h2>
-        <p>Nous proposons des solutions innovantes adaptées à vos besoins.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Envoyez-nous un message pour en savoir plus.</p>
-    </section>
+    <main>
+        <section class="hero">
+            <h2>Bienvenue sur le site le plus stylé !</h2>
+            <p>Découvrez un design moderne et une expérience utilisateur exceptionnelle.</p>
+            <div class="cta">
+                <a href="#about">En savoir plus</a>
+            </div>
+        </section>
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Ce site a été conçu pour captiver votre attention grâce à un design épuré et une navigation intuitive. Profitez d'une expérience unique.</p>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <p>Nous offrons des solutions créatives et innovantes, adaptées à vos besoins, pour vous aider à atteindre vos objectifs.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous avez des questions ? Envoyez-nous un message et nous serons ravis de vous répondre.</p>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2023 Ultra Stylé. Tous droits réservés.</p>
+        <p>&copy; 2023 Ultra Stylé. Tous droits réservés. Créé avec ❤️ et style.</p>
     </footer>
 </body>
 </html>
